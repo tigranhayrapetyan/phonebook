@@ -37,12 +37,14 @@
       
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="/" class="nav-link px-2 link-dark">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Alphabetical arrange</a></li>
+        <li><a href="/arrange" class="nav-link px-2 link-dark">Alphabetical arrange</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">Searche a phone number</a></li>
         <!-- <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">About</a></li> -->
       </ul>
       
+      
+
       <div class="col-md-6 text-end">
 
       @if(Request::is('dashboard')) 

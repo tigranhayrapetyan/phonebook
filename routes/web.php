@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserAuthController;
 use App\Http\Controllers\ContactsUploadController;
+use App\Http\Controllers\DatabaseContactsArrange;
 
 
 
@@ -19,3 +20,6 @@ Route::get('/dashboard', [UserAuthController::class, 'dashboard'])->middleware('
 Route::get('/logout',[UserAuthController::class, 'logout']);
 
 Route::post('/upload-contact', [ContactsUploadController::class, 'uploadContact'])->name('upload-contact');
+
+Route::get('/arrange', [DatabaseContactsArrange::class, 'arrangepage']);
+Route::get('/arrange/search', [DatabaseContactsArrange::class, 'search']);
